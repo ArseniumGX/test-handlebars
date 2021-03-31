@@ -1,6 +1,7 @@
 import express from 'express'
 import routes from './routes'
 import exphbs from 'express-handlebars'
+import './database'
 
 const app = express()
 

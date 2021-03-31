@@ -1,7 +1,5 @@
 import middleware from './middleware'
-import userController from './homeController'
-import contactsController from './contactsController'
-import aboutController from './aboutController'
+import homeController from './homeController'
+import postController from './postController'
 
-
-export { middleware, userController, contactsController, aboutController }
+export { middleware, homeController, postController }

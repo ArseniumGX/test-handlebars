@@ -10,7 +10,6 @@ class Middlewares{
 
     notFound = (req: Request, res: Response, next:NextFunction) => {
         let slug = req.params.slug
-        console.log(slug)
         res.status(404)
         res.render('404', {
             slug

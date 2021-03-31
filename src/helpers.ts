@@ -4,17 +4,14 @@ const helpers = {
     defaultPageTitle: "Página de Teste",
     date: date.getFullYear(),
     menu: [{
-        item: "Home",
+        name: "Home",
         slug: '/'
     },{
-        item: 'Contato',
-        slug: '/contact'
+        name: "Add Post",
+        slug: "/post/add"
     },{
-        item: 'Sobre',
-        slug: '/about'
-    },{
-        item: 'Login',
-        slug: '/login'
+        name: 'Login',
+        slug: '/users/login'
     }]
 }
 
