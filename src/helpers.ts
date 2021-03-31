@@ -1,3 +1,21 @@
-const defaultPageTitle = "Página de Teste"
+const date = new Date()
 
-export default { defaultPageTitle }
+const helpers = {
+    defaultPageTitle: "Página de Teste",
+    date: date.getFullYear(),
+    menu: [{
+        item: "Home",
+        slug: '/'
+    },{
+        item: 'Contato',
+        slug: '/contact'
+    },{
+        item: 'Sobre',
+        slug: '/about'
+    },{
+        item: 'Login',
+        slug: '/login'
+    }]
+}
+
+export default { helpers }

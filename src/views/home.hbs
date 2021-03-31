@@ -4,34 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{h.defaultPageTitle}}</title>
+        <title>{{h.helpers.defaultPageTitle}}</title>
         <style>
-            body{
-                background-color: #666;
-                color: #FFF;
-                text-align: center;
-            }
-            .container{
+            .boxCustom{
                 background-color: #536;
                 margin: 5% auto;
                 display: flex;
                 flex-direction: column;
-                width: 200px;
+                max-width: 1000px;
+                height: 480px;
                 border-radius: 15px;
-                box-shadow: 15px 15px .5em #000;
+                box-shadow: 5px 5px 1.9em #000;
                 text-shadow: 5px 5px .1em #000;
             }
-            
         </style>
     </head>
     <body>
-        {{> header}}
-
-        <div class="container">
-            <p>{{name}}</p>
-            <p>{{email}}</p>
-            <p>{{phone}}</p>
-            <p>{{age}}</p>
-        </div>
+        <header>{{> header}}</header>
+        {{> menu}}
+        <section class="boxCustom"></section>
+        <footer>{{> footer}}</footer>
     </body>
 </html>

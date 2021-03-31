@@ -1,0 +1,25 @@
+<style>
+    ul{
+        display: inline-flex;               
+    }
+    ul li{
+        margin-left: 7px;
+        width: 80px;
+        border-radius: 3px;
+        text-align: center;
+        background-color: #0AF;
+    }
+    .test{
+        color: #f2342a
+    }
+
+    ul li:hover{
+        background-color: #97F;
+    }
+</style>
+
+<ul>
+    {{#h.helpers.menu}}
+        <li><a href={{slug}}>{{item}}</a></li>
+    {{/h.helpers.menu}}
+</ul>

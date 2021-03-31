@@ -6,6 +6,7 @@
   "author": "Jose Pereira Macedo <arseniumgx@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "tsnd --clear --transpile-only src/server.ts",
     "dev": "tsnd --clear --transpile-only src/server.ts"
   },
   "dependencies": {

@@ -7,7 +7,7 @@ const app = express()
 const template = exphbs.create({
     extname: '.hbs',
     defaultLayout: false,
-    partialsDir: `${__dirname}/view/partials`
+    partialsDir: `${__dirname}/views/partials`
 })
 
 app.use(express.json())

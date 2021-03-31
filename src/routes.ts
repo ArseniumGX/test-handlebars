@@ -1,13 +1,15 @@
 import { Router } from 'express'
-import userController from './controllers/usersController'
+import {userController , middleware, aboutController, contactsController} from './controllers'
 
 const router = Router()
 
-router.use(userController.middleware)
+router.use(middleware.helpersDefinitions)
+
 router.get('/', userController.show)
-router.post('/', userController.create)
-router.put('/', userController.update)
-router.delete('/', userController.delete)
+router.get('/about', aboutController.show)
+router.get('/contact', contactsController.show)
+
+router.use('/:slug',middleware.notFound)
 
 
 export default router
