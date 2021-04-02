@@ -20,3 +20,6 @@
 
 #### OBS.:
 <p> Tive um pouco de problema pra entender como o TypeORM trabalha com o mongodb, mas já sanei as dúvidas. </p>
+
+### OBS2.:
+<p> Estou commitando a a rodo achando que o projeto estava como private, ta uma zona. Um dia arrumo isso. </p>
