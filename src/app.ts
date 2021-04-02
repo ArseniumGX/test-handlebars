@@ -2,6 +2,7 @@ import express from 'express'
 import routes from './routes'
 import exphbs from 'express-handlebars'
 import './database'
+import { getConnectionOptions } from 'typeorm'
 
 const app = express()
 
