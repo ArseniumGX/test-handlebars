@@ -1,11 +1,11 @@
 import 'typeorm'
 import { Column, CreateDateColumn, Entity, ObjectID, ObjectIdColumn } from 'typeorm'
 
-@Entity('blog.post')
+@Entity('post')
 class Post{
 
     @ObjectIdColumn()
-    id: ObjectID
+    _id: ObjectID
     
     @Column()
     title: string
@@ -24,4 +24,4 @@ class Post{
 
 }
 
-export default new Post
+export { Post }
